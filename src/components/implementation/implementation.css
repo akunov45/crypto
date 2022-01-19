@@ -1,0 +1,74 @@
+.road-map {
+    display: flex;
+}
+.road-map div {
+    width: 550px;
+}
+
+.road-map .line {
+    margin: 10px 20px 0 0;
+    width: 94px;
+}
+
+.road-content {
+    width: 770px;
+    margin: 0 auto;
+    text-align: center;
+}
+.road-content h2 {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    color: #090f3f;
+    letter-spacing: 0.02em;
+}
+.road-content p {
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4f4f4f;
+    margin-bottom: 136px;
+}
+.road-range {
+    display: flex;
+}
+.road-range div:nth-child(-n + 3) {
+    width: 208px;
+    /* border-bottom: 6px solid yellow; */
+    margin-bottom: 45px;
+}
+.road-range .yellow {
+    height: 6px;
+    width: 6px;
+    background-color: #fff;
+    border: 6px solid #f8ba1a;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.yellow::before {
+    content: '';
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.yellow-line::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 84.8%;
+    border: 3px solid #f8ba1a;
+}
+.yellow-black::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 84.8%;
+    border: 3px solid #000;
+}
+.road-range div:nth-child(n + 4) {
+    width: 208px;
+    border-bottom: 6px solid #e0e0e0;
+    margin-bottom: 45px;
+}
